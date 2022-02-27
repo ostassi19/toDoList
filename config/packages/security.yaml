@@ -33,6 +33,8 @@ security:
                 password_path: __password
                 success_handler: lexik_jwt_authentication.handler.authentication_success
                 failure_handler: lexik_jwt_authentication.handler.authentication_failure
+        logout:
+            pattern: logout
 
         api:
             pattern: ^/

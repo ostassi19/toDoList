@@ -51,4 +51,26 @@ class AuthentificationController extends AbstractFOSRestController
         $this->documentManager->flush();
         return new JsonResponse(['status' => 'user created!'], Response::HTTP_CREATED);
     }
+
+    /**
+     * @Rest\Get (
+     * path = "/logout",
+     * name = "logout"
+     * )
+     * @Rest\View
+     */
+    public function logout(): void{
+
+    }
+
+    /**
+     * @Rest\Get (
+     * path = "/aaaa",
+     * name = "aaaa"
+     * )
+     * @Rest\View
+     */
+    public function aaaa(){
+        return (['status' => 'aaaa success']);
+    }
 }
